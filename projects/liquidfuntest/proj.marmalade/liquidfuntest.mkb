@@ -1,0 +1,57 @@
+options
+{
+	module_path="../../../cocos2dx/proj.marmalade/;../../../CocosDenshion/proj.marmalade/;../../../extensions/proj.marmalade/;../../../external/chipmunk/proj.marmalade/;../../../external/Box2D/proj.marmalade/"
+	s3e-data-dir = "../Resources/"
+}
+
+includepaths
+{
+	../Classes
+	../../../samples/Cpp/TestCpp/Classes/Box2DTestBed
+}
+subprojects
+{
+	IwGL
+	cocos2dx
+	cocos2dx-ext
+	Box2D
+	CocosDenshion
+#	chipmunk
+}
+
+defines
+{
+	CC_ENABLE_BOX2D_INTEGRATION=1
+}
+assets
+{
+	(../Resources)
+}
+
+files
+{
+	[Main]
+	(src)
+	Main.h
+	Main.cpp
+
+	(../Classes)
+	AppDelegate.cpp
+	AppDelegate.h
+	Box2DGLESDebugDrawLayer.cpp
+	Box2DGLESDebugDrawLayer.h
+	B2ParticleOnlyLayer.cpp
+	B2ParticleOnlyLayer.h
+	FaucetEmitter.cpp
+	FaucetEmitter.h
+	LiquidFunScene.cpp
+	LiquidFunScene.h
+	TouchLayer.cpp
+	TouchLayer.h
+
+	(../../../samples/Cpp/TestCpp/Classes/Box2DTestBed)
+	GLES-Render.cpp
+	GLES-Render.h
+}
+
+
